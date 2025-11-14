@@ -1,0 +1,151 @@
+body {
+  background-color: #18b0f7;
+}
+h1 {
+  color: #ffffff;
+  display: flex;
+  font-size: 4.063rem;
+}
+.topheader {
+  position: fixed;
+  background-color: rgb(0, 140, 255);
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size:30px;
+}
+.Menu-Horizontal li a {
+  display: block;
+  color: #ffffff;
+  padding: 0.938rem 1.25rem;
+  text-decoration: none;
+}
+.Menu-Vertical {
+  padding: 0px;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 8.125rem;
+  background-color: #504deb;
+}
+.Menu-Horizontal li a:hover {
+  color: #4fbda3;
+  font-style: 35px;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+/*SECCION PERSONAS*/
+.seccion-personas {
+  padding: 60px 20px;
+  background-color: #504deb;
+}
+.div-gral-persona {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1500px;
+  gap: 65px;
+}
+.div-pers-texto {
+  flex: 1;
+  color: #ffefe0;
+  font-size: 14px;
+}
+.div-pers-texto h2 {
+  color: #ffffff;
+  line-height: 1.6;
+}
+.div-pers-img {
+  flex: 1;
+}
+.div-pers-img img {
+  width: 100%;
+  max-width: 700px;
+}
+/*Seccion videos*/
+.seccion-vid {
+  padding: 60px 20px;
+  background-color: #504deb;
+}
+.div-gral-vid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  gap: 65px;
+}
+.div-vid-texto {
+  flex: 1;
+  color: #ffefe0;
+  font-size: 14px;
+}
+.div-vid-texto h3 {
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/*SECCION FORMULARIO*/
+
+.seccion-formulario {
+  background-color: aqua;
+  padding: 48px;
+  border: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.div-cont-formulario {
+  background-color: aquamarine;
+  padding: 30px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.campo {
+  background-color: #4fbda3;
+  border: 1px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.formulario {
+  display: block;
+  font-weight: 600px;
+  margin-bottom: 8px;
+  color: blue;
+}
+
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid brown;
+  box-sizing: border-box;
+}
+.lista-checkbox, 
+.lista-radio{
+  list-style: :none;
+  padding:10px;
+  margin:0;
+  border:1px;
+  background-color: aqua;
+  border-radius:5px;
+}
+.formulario button{
+  background-color: #db5f0c;
+  color:white;
+  border:1.5px solid black;
+  padding:10px 20px;
+  border-radius: 5px;
+}

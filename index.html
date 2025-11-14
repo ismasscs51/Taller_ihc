@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Actividad_CSS_BrownSocial</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!---LOGO Y MENUS-->
+    <h1>FASTBITE</h1>
+    <nav class=topheader">
+      <ul class="Menu-Horizontal">
+      <a href="" class="">
+        <img height ="200px" width="200px" src="imgx/logo.png" alt=""/>
+      </a>        
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Comunidad</a></li>
+        <li>
+          <a href="">Actividades</a>
+         <ul class="Menu-Vertical"> 
+          <li><a href="">Carreras SeaShark</a><li>
+          <li><a href="">Enfrentamiento LasVenturas</a><li>
+          <li><a href="">Coliseo Manolo Caminos</a><li>
+          <li><a href="">Facto del día</a><li>
+         </ul>
+        </li>
+        <li><a href="">Overview</a></li>
+
+      </ul>
+    </nav>
+    <!--SECCION-PERSONAS-->
+    <section class= "seccion-personas">
+        <div class="div-gral-persona">
+              <div class="div-pers-texto">
+                    <h2>Sobre God of War 2</h2>
+
+                    <p>
+                      FastBite es una aplicación de comida rápida diseñada para facilitar y acelerar la forma en que los usuarios realizan pedidos desde su celular. La plataforma reúne una amplia variedad de restaurantes, permitiendo explorar menús, personalizar combos y acceder a promociones exclusivas. Su interfaz intuitiva está pensada para que cualquier persona pueda ordenar en pocos pasos, mientras que el sistema de pago integrado asegura una experiencia rápida y segura.
+                    </p>
+
+                    <p>
+                      Además, FastBite incorpora un sistema de seguimiento en tiempo real que permite ver el progreso del pedido desde la preparación hasta la entrega en la puerta del usuario. Gracias a su algoritmo de rutas optimizadas, los repartidores pueden llegar más rápido, reduciendo tiempos de espera y garantizando un mejor servicio. La aplicación busca ofrecer comodidad, rapidez y variedad para quienes buscan una solución práctica al momento de comer.
+                    </p>
+              </div>
+
+              <div class="div-pers-img">
+                <img src="imgx/xddd.jpg"/>
+              </div>
+              <!--<div class="div-brs-vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GFXpLHiewX4?si=vSwccXa84UpSbWNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>-->
+            </div> 
+    </section>
+    
+    
+    <section class="seccion-vid">
+      <div class="div-gral-vid">
+
+        <div class="div-vid-texto">
+          <h3>Reseña FASTBITE</h3>
+          <p>
+            "FastBite se ha convertido en mi aplicación favorita para pedir comida rápida. La navegación es súper fácil, los pedidos llegan en buen estado y en menos tiempo de lo esperado. Me gusta que muestre promociones personalizadas y que el seguimiento del repartidor sea tan preciso. Ideal para cuando tienes hambre y quieres algo rápido sin complicarte."
+          </p>
+        </div>
+        
+        
+        <div class="div-brs-vid">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GITd1coyXbg?si=X56HmH20LnSK4m02" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+        
+    </section>
+
+    <!--SECCION FORMULARIO-->
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!--INPUTS/LABEL-->
+          <div class="campo">
+            <label form="nombre">Nombres Completos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombre"/>
+          </div>
+          <!--LISTA DESPLEGABLE-->
+          <div class="campo">
+            <label for="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="peru">Peru</option>
+              <option value="colombia">Colombia</option>
+              <option value="argentina">Argentina</option>
+              <option value="mexico">Mexico</option>
+            </select>
+          </div>
+          <!--CHECKBOX-->
+          <div class="campo">
+            <label>Interes:</label>
+            <ul class="lista-checkbox">
+              <li><label><input type="checkbox"name="intereses" value="educacion">Educacion</label></li>
+              <li><label><input type="checkbox"name="intereses" value="tecnologia">Tecnologia</label></li>
+              <li><label><input type="checkbox"name="intereses" value="finanzas">Finanzas</label></li>
+            </ul>
+          </div>
+          <!--RADIO-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li><label><input type="radio"name="sexo" value="masculino">Masculino</label></li>
+              <li><label><input type="radio"name="sexo" value="femenino">Femenino</label></li>
+              <li><label><input type="radio"name="sexo" value="homofobico">Homofobico</label></li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+      <!-- PIE DE PAGINA -->
+
+      <section id="footer">
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Logo y nombre de sitio -->
+            <div class="footer-brand">
+              <img
+                src="Imagenes/senati-logo.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+              <p>SENATI</p>
+              <small>© 2025 Todos los derechos reservados</small>
+            </div>
+  
+            <!-- Enlaces legales -->
+            <div class="footer-links">
+              <h4>Legal</h4>
+              <a href="/Documentos/3.politica-privacidad.pdf"
+                >Política de Privacidad</a
+              >
+              <!-- Dentro de href llama a un documento pdf con la poltica-->
+              <a href="#">Términos y Condiciones</a>
+              <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+              <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+            </div>
+  
+            <!-- Redes sociales con íconos personalizados -->
+            <div class="footer-social">
+              <h4>Síguenos</h4>
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                  alt="Facebook"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                  alt="Instagram"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                  alt="Twitter"
+                  class="social-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+      </section>
+      
+
+  </body>
+</html>
