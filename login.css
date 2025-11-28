@@ -1,109 +1,90 @@
-/* Contenedor principal: Centra el formulario */
+/* Fondo con efecto difuminado tipo glass */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    /* Fondo atractivo para la vista de escritorio */
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    padding: 1.25rem; /* 20px de padding */
+    background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+    padding: 1.25rem;
 }
 
-/* La caja del formulario */
+/* Caja con efecto glassmorphism */
 .login-box {
-    background: white;
-    padding: 2.5rem; /* 40px */
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
+    background: rgba(255, 255, 255, 0.25);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     width: 100%;
-    max-width: 25rem; /* 400px, el ancho máximo */
+    max-width: 25rem;
     text-align: center;
 }
 
 .login-box h2 {
-    margin-bottom: 1.5625rem; /* 25px */
-    color: #333;
-    font-size: 1.8rem;
+    margin-bottom: 1.5625rem;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
-/* División para agrupar Label e Input */
 .input-group {
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1.2rem;
     text-align: left;
 }
 
 .input-group label {
     display: block;
-    margin-bottom: 0.5rem; /* 8px */
-    font-weight: bold;
-    color: #555;
+    margin-bottom: .4rem;
+    color: #000000;
+    font-weight: 600;
 }
 
 .input-group input {
     width: 100%;
-    padding: 0.75rem; /* 12px */
-    border: 1px solid #ccc;
-    border-radius: 0.3125rem; /* 5px */
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(255,255,255,0.7);
     font-size: 1rem;
-    transition: border-color 0.3s;
 }
 
 .input-group input:focus {
-    border-color: #2575fc;
-    outline: none;
+    outline: 2px solid #ffffff;
 }
 
-/* Estilo del botón */
 .login-button {
     width: 100%;
-    padding: 0.75rem; /* 12px */
+    padding: .9rem;
     border: none;
-    border-radius: 0.3125rem; /* 5px */
-    background-color: #2575fc;
+    border-radius: .5rem;
+    background: #6a11cb;
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 0.625rem; /* 10px */
+    transition: transform 0.2s, background 0.3s;
 }
 
 .login-button:hover {
-    background-color: #0e63e2;
+    background: #520f9c;
+    transform: scale(1.03);
 }
 
-/* -------------------------------------- */
-/* MEDIA QUERY: RESPONSIVE MÓVILES */
-/* -------------------------------------- */
-
-/* Estilos aplicados cuando la pantalla mide 600px o menos */
+/* Responsive */
 @media (max-width: 600px) {
-    
-    /* El contenedor principal simula una vista de aplicación */
     .login-container {
-        padding: 0; /* Quita el padding exterior */
-        background: #fff; /* Fondo blanco liso */
-        align-items: flex-start; /* Mueve el formulario arriba */
-        min-height: auto; 
+        background: #8EC5FC;
     }
-
-    /* La caja del formulario se expande y pierde los adornos de tarjeta */
     .login-box {
-        padding: 1.5rem; /* 24px de padding interno */
-        margin-top: 2rem; /* 32px de espacio superior */
-        width: 100%;
-        max-width: 100%;
-        box-shadow: none; /* Elimina la sombra */
-        border-radius: 0; /* Elimina el borde redondeado */
-        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 1.5rem;
+        backdrop-filter: none;
+        background: white;
     }
-
     .login-box h2 {
-        font-size: 1.7rem; /* Ajuste sutil del tamaño */
-        text-align: left;
-    }
-    
-    .input-group input {
-        padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
+        color: #333;
     }
 }
