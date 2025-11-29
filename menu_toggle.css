@@ -7,9 +7,21 @@
   cursor: pointer; /* Manito al pasar el mouse */
   margin-right: 1rem; /* Espacio entre el borde derecho */
 }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white; /* Ajusta según tu diseño */
+  position: relative;
+}
+/* Ajuste para que el logo no se rompa */
+.logo-img {
+  display: block;
+}
 
 /* RESPONSIVE: MÓVILES */
-@media (max-width: 768px) {
+@media (max-width: 4000px) {
   .menu-toggle {
     display: block; /* Mostrar botón hamburguesa en móviles */
     color: black;
